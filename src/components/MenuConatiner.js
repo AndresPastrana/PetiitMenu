@@ -12,7 +12,9 @@ const MenuConatiner = () => {
     <>
       <div>
         {loading && <LoadingSpinner>Loading.....</LoadingSpinner>}
-        {!loading && error && <ErrorMessage>Error Mesagge</ErrorMessage>}
+        {!loading && error && (
+          <ErrorMessage msg={error}>Error Mesagge</ErrorMessage>
+        )}
         {!loading && !error && <Category />}
       </div>
     </>
