@@ -4,9 +4,7 @@ import { useData } from "./hooks/useData";
 import AppRoutes from "./routes/AppRoutes";
 
 const App = () => {
-  // TODO: Crear variable de entorno para guardar los endpoints
-  console.log(process.env);
-  const [{ loading, data, error }] = useData("http://localhost:8085/products");
+  const [{ loading, data, error }] = useData(process.env.REACT_APP_PRODUCTS);
   const [category, setCategory] = useState(0);
   return (
     <MenuContext.Provider

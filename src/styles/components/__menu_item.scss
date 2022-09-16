@@ -1,0 +1,10 @@
+.__menu_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    font-style: italic;
+    font-weight: bold;
+}

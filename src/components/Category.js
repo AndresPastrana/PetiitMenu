@@ -9,7 +9,6 @@ const Category = () => {
   const { category, data } = useContext(MenuContext);
   const arregloCategorias = ["TRAGOS", "COMIDAS", "COCTELES"];
   const categoryName = arregloCategorias[category];
- 
 
   const filteredData = useMemo(
     () => filterByCategory(categoryName, data),
@@ -17,17 +16,15 @@ const Category = () => {
   );
   //TODO: Agergar animacion al componete a su entrada
   return (
-    <List>
+    <div className="__category">
       <h4>{categoryName}</h4>
-      {filteredData.map((e) => {
-        const [name, items] = e;
-        return (
-          <ListItem key={name}>
-            <SubCategory key={name} name={name} items={items} />
-          </ListItem>
-        );
-      })}
-    </List>
+      <ul>
+        {filteredData.map((e) => {
+          const [name, items] = e;
+          return <SubCategory key={name} name={name} items={items} />;
+        })}
+      </ul>
+    </div>
   );
 };
 

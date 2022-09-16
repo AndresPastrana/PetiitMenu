@@ -10,7 +10,7 @@ const MenuConatiner = () => {
 
   return (
     <>
-      <div>
+      <div className="__menu_container">
         {loading && <LoadingSpinner>Loading.....</LoadingSpinner>}
         {!loading && error && (
           <ErrorMessage msg={error}>Error Mesagge</ErrorMessage>

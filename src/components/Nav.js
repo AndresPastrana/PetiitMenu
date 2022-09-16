@@ -6,7 +6,6 @@ import Paper from "@mui/material/Paper";
 import { MenuContext } from "./MenuContext";
 
 const Nav = () => {
-  console.log("Rendering");
   const { setCategory } = useContext(MenuContext);
 
   return (

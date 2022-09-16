@@ -9,11 +9,9 @@ const Main = () => {
   return (
     <>
       <h1>Petitt Logo</h1>
-      <Box sx={{ pb: 7 }}>
-      <CssBaseline />
-        <MenuConatiner />
-        <Nav />
-      </Box>
+
+      <MenuConatiner />
+      <Nav />
     </>
   );
 };
