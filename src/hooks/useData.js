@@ -19,7 +19,10 @@ export const useData = (url) => {
 
       fetchData()
         .then((resp) => {
-          setState({ ...state, loading: false, data: resp.data });
+          setTimeout(() => {
+            
+            setState({ ...state, loading: false, data: resp.data });
+          },3000);
         })
         .catch(({ message }) =>
           setState({ error: message, loading: false, data: [] })

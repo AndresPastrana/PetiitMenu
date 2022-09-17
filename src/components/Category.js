@@ -16,12 +16,19 @@ const Category = () => {
   );
   //TODO: Agergar animacion al componete a su entrada
   return (
-    <div className="__category">
-      <h4>{categoryName}</h4>
+    <div className="__category animate__animated animate__fadeIn">
+      <h4 className="__category_titule ">{categoryName}</h4>
+      <hr></hr>
       <ul>
         {filteredData.map((e) => {
           const [name, items] = e;
-          return <SubCategory key={name} name={name} items={items} />;
+          return (
+            <SubCategory
+              key={`${name}${Date.now()}`}
+              name={name}
+              items={items}
+            />
+          );
         })}
       </ul>
     </div>

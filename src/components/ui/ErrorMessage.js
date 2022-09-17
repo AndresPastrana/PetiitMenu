@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 
 const ErrorMessage = ({ msg }) => {
   return (
-    <div>
+    <div className="spinner">
       <Stack sx={{ width: "100%" }} spacing={2}>
         <Alert severity="error">{msg} — check it out!</Alert>
       </Stack>

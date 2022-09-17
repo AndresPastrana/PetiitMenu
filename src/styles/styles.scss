@@ -2,5 +2,7 @@
 @import './base/_settings';
 
 
+@import './components/__category.scss';
+@import './components/_subcategory';
 @import './components/_menu';
 @import './components/_menu_item';

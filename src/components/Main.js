@@ -4,11 +4,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import Nav from "./Nav";
 import MenuConatiner from "./MenuConatiner";
+import Header from "./Header";
 
 const Main = () => {
   return (
     <>
-      <h1>Petitt Logo</h1>
+      <Header/>
 
       <MenuConatiner />
       <Nav />
