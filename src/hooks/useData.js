@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 
 export const useData = (url) => {
+  console.log(url);
   const [state, setState] = useState({ loading: false, data: [], error: null });
 
   const isMounted = useRef(false);
@@ -17,12 +18,11 @@ export const useData = (url) => {
         return { data, status };
       }
 
-      fetchData()
+      fetchData(url)
         .then((resp) => {
-          setTimeout(() => {
-            
+            console.log(resp);
             setState({ ...state, loading: false, data: resp.data });
-          },3000);
+         
         })
         .catch(({ message }) =>
           setState({ error: message, loading: false, data: [] })

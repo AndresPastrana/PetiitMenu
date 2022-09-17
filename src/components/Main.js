@@ -9,7 +9,7 @@ import Header from "./Header";
 const Main = () => {
   return (
     <>
-      <Header/>
+      {/* <Header/> */}
 
       <MenuConatiner />
       <Nav />
