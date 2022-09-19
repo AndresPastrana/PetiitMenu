@@ -1,9 +1,23 @@
 .__subcategory_container{
     padding: 10px;
+    margin: 0rem 1rem 1rem 1rem;
+    
     margin-bottom: 15px;
-   
-}
+    }
 .__subcategory_title{
  margin: 0;
  margin-bottom: 10px;
+ font-family: 'PT Mono', monospace;
+ text-align: center;
+ font-size: x-large;
+}
+.subcategory-style{
+    margin: 0px;
+    
+}
+
+.card-styles{
+    background-color: cornsilk;
+    color: #b8380b;
+    padding: 26px;
 }

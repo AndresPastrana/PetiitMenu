@@ -1,7 +1,7 @@
 @import './base/_base';
 @import './base/_settings';
-
-
+@import './components/nav';
+@import './components/loaderSpinner.scss';
 @import './components/__category.scss';
 @import './components/_subcategory';
 @import './components/_menu';

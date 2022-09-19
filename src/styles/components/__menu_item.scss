@@ -3,9 +3,31 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 .price{
     font-weight: bold;
-    color: $font-secundary;
+    color: #b8380b;
+}
+.dotted-line-container{
+    width: 10%;
+    
+}
+.dotted-line{
+    border-style: dashed ;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    list-style:circle;
+}
+.desc-styles{
+    font-size: 9px;
+    display: block;
+    max-width: 100px;
+    margin-top: 5px;
+    color: #b44b24;
+}
+.name-styles{
+    margin-bottom: 5px;
+    max-width: 120px;
 }

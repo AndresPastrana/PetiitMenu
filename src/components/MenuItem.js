@@ -9,11 +9,14 @@ const MenuItem = ({
     <li>
       <div className="__menu_item">
         <div>
-          <p>{name}</p>
-          <p>{desc}</p>
+          <p className="name-styles"><bold>{name}</bold></p>
+          <p className="desc-styles">{desc}</p>
+        </div >
+        <div className="dotted-line-container">
+          <hr className="dotted-line"/>
         </div>
         <div>
-          <p className="price">{price} cup</p>
+          <p className="price">{price}cup</p>
         </div>
       </div>
     </li>
